@@ -1,0 +1,30 @@
+---
+name: memdeklaro
+version: 1.0
+description: Memdeklaro - Self-Declaration of Identity
+homepage: https://memdeklaro.org
+metadata: {"memdeklaro":{"category":"tools","website":"https://memdeklaro.org"}}
+---
+
+# Memdeklaro - Self-Declaration of Identity
+
+> Memdeklaro is an ethical alternative to centralized ID. Free to use, open source and zero third parties. Unlike traditional centralized ID cards, Memdeklaro is self-declared and self-printed by the user themselves. Memdeklaro is for everyone and does not require permission from third parties.
+
+## Quick Start
+
+1. Use the free generator at https://memdeklaro.org or download the open source template from https://github.com/memdeklaro
+2. Add your self-chosen name, birth date, photo and signature
+3. Print it out as a business card or CR-80 plastic card or use digitally
+
+## Links
+
+- Sitemap: https://memdeklaro.org/sitemap.txt
+- Homepage: https://memdeklaro.org/
+- Standalone Web App: https://memdeklaro.org/app/
+- FAQ: https://memdeklaro.org/about
+- Contact: https://memdeklaro.org/contact
+- Terms: https://memdeklaro.org/terms
+- Privacy Policy: https://memdeklaro.org/privacy
+- Download: https://memdeklaro.org/download
+- Decentralized Identity Guide: https://memdeklaro.org/blog/decentralized-identity-guide
+- Non-Government ID Guide - Memdeklaro vs. Digitalcourage vs. World Passport: https://memdeklaro.org/blog/non-government-id-guide

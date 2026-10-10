@@ -1,0 +1,724 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>Memdeklaro - Self-Declaration of Identity</title>
+    <meta name="description" content="Memdeklaro - Empowering people to self-declare their own identity without third parties. Open source, non-government and non-corporate.">
+    <meta property="og:title" content="Memdeklaro: Self-Declaration of Identity">
+    <meta property="og:description" content="Memdeklaro - Empowering people to self-declare their own identity without third parties. Open source, non-government and non-corporate.">
+    <meta property="og:image" content="https://memdeklaro.github.io/memdeklaro/img/share.jpg">
+    <link rel="canonical" href="https://memdeklaro.org/">
+    <link href="https://memdeklaro.github.io/memdeklaro/favicon.png" rel="shortcut icon">
+    <link href="https://memdeklaro.github.io/memdeklaro/css/style.css" rel="stylesheet">
+  </head>
+  <body class="font-sans bg-cream text-ink antialiased">
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-cream">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-between h-18 py-4">
+          <a href="https://memdeklaro.github.io/memdeklaro/" class="flex items-center gap-3 group">
+            <div class="relative w-10 h-10 rounded-lg bg-brand-600 flex items-center justify-center shadow-md group-hover:shadow-brand-300/50 transition-shadow duration-300">
+              <svg fill="white" stroke="none" class="w-6 h-6" viewBox="0 0 40 40">
+                <path d="M37.2317 4.49969C36.4913 5.78214 35.1479 6.49947 33.7664 6.50036C33.0773 5.30374 33.0273 3.78252 33.7674 2.50067C34.5078 1.21821 35.8511 0.500883 37.2326 0.5C37.9217 1.69661 37.9718 3.21783 37.2317 4.49969Z" fill="white"></path>
+                <path clip-rule="evenodd" d="M33.0615 10.7135C32.5693 12.0271 32.3346 13.6297 32.3807 15.4463C33.0777 14.8558 33.9797 14.4997 34.9648 14.4997C36.4454 14.4997 37.7381 15.3041 38.4297 16.4998C37.7381 17.6953 36.4455 18.4997 34.965 18.4997C34.0664 18.4997 33.237 18.2034 32.5693 17.7032C32.744 18.9703 33.0381 20.3133 33.4578 21.7122L31.5422 22.287C30.1447 17.6289 29.9658 13.2344 31.2025 9.97435C30.3063 10.1345 29.3508 9.99127 28.5007 9.50042C27.2184 8.7601 26.5011 7.41704 26.5 6.03574C27.6967 5.34622 29.2184 5.29597 30.5005 6.03622C31.7797 6.77478 32.4967 8.11322 32.5011 9.49106C33.4786 8.51609 34.9348 8.07423 36.3643 8.45726C37.7945 8.84047 38.835 9.95212 39.1935 11.2861C38.216 12.2618 36.7593 12.7042 35.3292 12.321C34.3674 12.0633 33.5819 11.4762 33.0615 10.7135ZM32.5012 9.49649L32.5012 9.50018L32.5023 9.50075L32.5012 9.49649Z" fill="white" fill-rule="evenodd"></path>
+                <path d="M14.1642 14.8722C12.5378 13.7105 11.1276 12.4211 10.1157 11.4102C10.411 8.39997 11.9206 5.95131 13.4943 4.56836C13.4943 4.56836 14.6544 7.07845 16.6511 9.85287C16.5382 10.014 16.4313 10.1798 16.3298 10.3498C15.5425 11.6683 15.0345 13.3338 14.6404 15.198C14.4861 15.0971 14.3278 14.9891 14.1642 14.8722Z" fill="white"></path>
+                <path clip-rule="evenodd" d="M18.502 32.9997C23.502 32.9997 28.002 28.9997 28.002 22.9997C28.002 21.2048 27.7564 19.9613 27.4374 18.3456C27.3012 17.6555 27.1516 16.8975 27.002 15.9997L30.002 14.9997L27.4558 13.3023C26.4452 10.7854 24.8642 8.99972 22.5019 8.99972C18.1713 8.99972 17.082 12.2412 16.1148 18.2786C15.9974 18.2195 15.8792 18.1607 15.7596 18.1013C14.9406 17.6941 14.0632 17.2578 13.0018 16.4997C9.50184 13.9997 7.00193 10.9997 7.00193 10.9997C5.00188 13.9997 4.00195 19.9997 9.00168 24.9997C9.39734 25.3954 9.78234 25.7464 10.1538 26.0578C8.10767 26.7058 5.44022 26.9997 2.00173 26.9997C2.00173 26.9997 1.33529 28.9997 3.00173 31.4997C4.66816 33.9997 7.00156 34.9997 7.00156 34.9997L13.0016 31.9997C13.0016 31.9997 15.002 32.9997 18.502 32.9997ZM27.002 15.8679C26.993 15.9206 26.9923 15.9652 27.002 15.9997V15.8679ZM24.0017 13.4997C24.0017 14.3281 23.3302 14.9997 22.5017 14.9997C21.6733 14.9997 21.0017 14.3281 21.0017 13.4997C21.0017 12.6713 21.6733 11.9997 22.5017 11.9997C23.3302 11.9997 24.0017 12.6713 24.0017 13.4997Z" fill="white" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+            <span class="font-serif font-bold text-xl tracking-tight transition-colors duration-300">
+            Memdeklaro
+            </span>
+          </a>
+          <div class="hidden md:flex items-center gap-8">
+            <a href="https://memdeklaro.github.io/memdeklaro/#what" class="text-sm font-medium link-underline text-ink duration-200">Intro</a>
+            <a href="https://memdeklaro.github.io/memdeklaro/#why" class="text-sm font-medium link-underline text-ink duration-200">Use Cases</a>
+            <a href="https://memdeklaro.github.io/memdeklaro/#generator" class="text-sm font-medium link-underline text-ink duration-200">Generator</a>
+            <a href="https://memdeklaro.github.io/memdeklaro/#about" class="text-sm font-medium link-underline text-ink duration-200">About</a>
+            <a href="https://memdeklaro.github.io/memdeklaro/app/" class="px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-brand-500/30">
+            Open App →
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="hero" class="relative min-h-screen hero-bg flex items-center overflow-hidden">
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-24">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white/80 text-sm font-medium mb-8 backdrop-blur-sm">
+              Open Source · Free · Humanitarian
+            </div>
+            <h1 class="font-serif text-5xl lg:text-7xl font-black text-white leading-tight mb-6">
+              Your identity<br> belongs to <span class="text-brand-300 italic">you</span>.
+            </h1>
+            <p class="text-white/70 text-lg lg:text-xl leading-relaxed mb-6 max-w-xl">
+              Memdeklaro empowers people to <strong class="text-white">self-declare their own identity</strong> without third parties. Open source, non-government and non-corporate.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://memdeklaro.github.io/memdeklaro/#generator" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-brand-700 font-bold rounded-xl hover:bg-brand-50 transition-all duration-200 shadow-lg hover:shadow-white/20 text-base">
+                Get Started
+              </a>
+              <a href="https://memdeklaro.github.io/memdeklaro/#what" class="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 backdrop-blur-sm text-base">
+                Learn More
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <div class="relative">
+              <div class="absolute inset-0 bg-brand-400/30 blur-3xl rounded-3xl scale-90"></div>
+              <div class="relative p-1 rounded-2xl shimmer-border shadow-2xl">
+                <div class="bg-white rounded-xl overflow-hidden">
+                  <img src="https://memdeklaro.github.io/memdeklaro/img/example.jpg" alt="Example Memdeklaro self-declaration" class="w-full max-w-sm object-contain">
+                </div>
+              </div>
+              <div class="absolute -bottom-4 -left-4 bg-white rounded-xl px-4 py-3 shadow-lg border border-gray-100 flex items-center gap-3">
+                <div class="w-8 h-8 bg-brand-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs text-gray-700">The Freedom to</p>
+                  <p class="text-sm font-bold text-ink">Be Yourself</p>
+                </div>
+              </div>
+              <div class="absolute -top-4 -right-4 bg-brand-600 rounded-xl px-4 py-3 shadow-lg flex items-center gap-2">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <p class="text-sm font-bold text-white">Non-government</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0  wave-divider">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fafaf5"></path>
+        </svg>
+      </div>
+    </section>
+    <section id="what" class="py-32 bg-cream">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-16 mb-20">
+          <h2 class="font-serif text-4xl lg:text-6xl font-black text-ink mb-12 leading-tight">
+            Your identity,<br> <span class="gradient-text">Your choice.</span>
+          </h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">
+            Memdeklaro is a <b>self-declaration of identity</b>: A way to express your chosen name and personal ties, independent from centralized third parties.
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">
+            Generate your <b>self-declaration</b> for free and use it in your community, web of trust or peer-to-peer network.
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">
+            Build up your reputation, portfolio or persona on a universally accessible foundation, using a physical self-declaration card or digital credential.
+          </p>
+<div class="mt-4 flex flex-wrap justify-center gap-6 text-gray-500 text-sm">
+            <div class="flex items-center gap-2">
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4 text-green-500">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Open Source
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Free to Use
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              For Everyone
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mb-24">
+          <div class="relative">
+            <div class="absolute inset-0 bg-brand-400/30 blur-3xl rounded-3xl scale-90"></div>
+            <div class="relative p-1 rounded-2xl shimmer-border">
+              <div class="bg-white rounded-xl overflow-hidden">
+                <img src="https://memdeklaro.github.io/memdeklaro/img/example2.jpg" alt="Example of physical and digital declarations" class="w-full max-w-3xl object-contain">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8 mb-2">
+          <div class="card-hover bg-gray-50 rounded-2xl p-8 border border-gray-100 flex gap-4 items-start">
+            <div class="bg-blue-100 rounded-xl p-2">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+           <div>
+            <h3 class="font-serif text-xl font-bold text-ink mb-3">Universally Accessible</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Anyone can generate a self-declaration without requiring third party permission.</p>
+          </div>
+          </div>
+          <div class="card-hover bg-gray-50 rounded-2xl p-8 border border-gray-100 flex gap-4 items-start">
+            <div class="bg-red-100 rounded-xl p-2">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
+              </svg>
+            </div>
+          <div>
+            <h3 class="font-serif text-xl font-bold text-ink mb-3">Freedom to Choose</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Self-declaration gives you the power to define your name, beliefs and personal ties.</p>
+          </div>
+          </div>
+          <div class="card-hover bg-gray-50 rounded-2xl p-8 border border-gray-100 flex gap-4 items-start">
+            <div class="bg-green-100 rounded-xl p-2">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+          <div>
+            <h3 class="font-serif text-xl font-bold text-ink mb-3">Open Source</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Memdeklaro is a free and open source initiative, similar to Wikipedia, Linux or Monero.</p>
+          </div>
+          </div>
+          <div class="card-hover bg-gray-50 rounded-2xl p-8 border border-gray-100 flex gap-4 items-start">
+            <div class="bg-yellow-100 rounded-xl p-2">
+              <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle>
+              </svg>
+            </div>
+          <div>
+            <h3 class="font-serif text-xl font-bold text-ink mb-3">Easy to Use</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Simply fill out the form and generate your self-declaration instantly. No application required.</p>
+          </div>
+          </div>
+          <div class="card-hover bg-gray-50 rounded-2xl p-8 border border-gray-100 flex gap-4 items-start">
+            <div class="bg-purple-100 rounded-xl p-2">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+          <div>
+            <h3 class="font-serif text-xl font-bold text-ink mb-3">Online and In Person</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Use your self-declaration online or in person, as a physical card, PDF printout or digital wallet.</p>
+          </div>
+          </div>
+          <div class="card-hover bg-gray-50 rounded-2xl p-8 border border-gray-100 flex gap-4 items-start">
+            <div class="bg-indigo-100 rounded-xl p-2">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+              </svg>
+            </div>
+          <div>
+            <h3 class="font-serif text-xl font-bold text-ink mb-3">Free Forever</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Memdeklaro is 100% free to use. No accounts and no subscriptions.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="py-32 bg-gradient-to-b from-brand-50 to-cream">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <h2 class="font-serif text-4xl lg:text-5xl font-black text-ink mb-6 leading-tight">
+            Freedom of Identity<br> <span class="gradient-text"> For Everyone</span>
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-3">
+            <p class="font-semibold text-ink flex gap-2 items-center">
+              For Creators
+              <svg class="w-5 h-5 text-brand-300" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24">
+                <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle>
+              </svg>
+            </p>
+            <p class="text-gray-500 text-sm flex-1">Self-declaration empowers you to define your identity on your own terms.</p>
+          </div>
+          <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-3">
+            <p class="font-semibold text-ink flex gap-2 items-center">
+              For Communities
+              <svg class="w-5 h-5 text-brand-300" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24">
+                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              </svg>
+            </p>
+            <p class="text-gray-500 text-sm flex-1">For co-ops, clubs, makerspaces, intentional communities and individuals.</p>
+          </div>
+          <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-3">
+            <p class="font-semibold text-ink flex gap-2 items-center">
+              For World Citizens
+              <svg class="w-5 h-5 text-brand-300" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24">
+                <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><circle cx="12" cy="12" r="10"/>
+              </svg>
+            </p>
+            <p class="text-gray-500 text-sm flex-1">Memdeklaro is based on Esperanto - a peaceful initiative for a global community.</p>
+          </div>
+          <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-3">
+            <p class="font-semibold text-ink flex gap-2 items-center">
+              For Stateless People
+              <svg class="w-5 h-5 text-brand-300" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24">
+                <path d="M2 21a8 8 0 0 1 13.292-6"/><circle cx="10" cy="8" r="5"/><path d="m16 19 2 2 4-4"/>
+              </svg>
+            </p>
+            <p class="text-gray-500 text-sm flex-1">Self-declaration does not require an existing government ID, making it accessible to people facing documentary exclusion.</p>
+          </div>
+          <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-3">
+            <p class="font-semibold text-ink flex gap-2 items-center">
+              For Privacy Enthusiasts
+              <svg class="w-5 h-5 text-brand-300" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24">
+                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </p>
+            <p class="text-gray-500 text-sm flex-1">Memdeklaro is local-first. Your data remains in your browser and is never shared with third parties.</p>
+          </div>
+          <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-3">
+            <p class="font-semibold text-ink flex gap-2 items-center">
+              For Artists
+              <svg class="w-5 h-5 text-brand-300" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24">
+                <path d="m11 10 3 3"/><path d="M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z"/><path d="M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031"/>
+              </svg>
+            </p>
+            <p class="text-gray-500 text-sm flex-1">Memdeklaro is in the public domain: perfect for remixing, forking or using in your projects.</p>
+          </div>
+          <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-3">
+            <p class="font-semibold text-ink flex gap-2 items-center">
+              To Reclaim Your Identity
+              <svg class="w-5 h-5 text-brand-300" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24">
+                <path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3"/><path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4"/><path d="M5 21h14"/>
+              </svg>
+            </p>
+            <p class="text-gray-500 text-sm flex-1">Memdeklaro allows you to self-assert and reclaim your identity on your own terms, without gatekeepers or third parties.</p>
+          </div>
+          <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-3">
+            <p class="font-semibold text-ink flex gap-2 items-center">
+              For Self-Sovereign Identity Devs
+              <svg class="w-5 h-5 text-brand-300" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24">
+                <path d="M12 19h8"/><path d="m4 17 6-6-6-6"/>
+              </svg>
+            </p>
+            <p class="text-gray-500 text-sm flex-1">Memdeklaro is compatible with W3C DID and web of trust and can function as an accessible base layer.</p>
+          </div>
+          <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-3">
+            <p class="font-semibold text-ink flex gap-2 items-center">
+              For Anyone
+              <svg class="w-5 h-5 text-brand-300" stroke="currentColor" stroke-width="2" fill="none" viewBox="0 0 24 24">
+                <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/><path d="M7 12h.01 3"/><path d="M11 12h.01 3"/><path d="M15 12h.01 3"/>
+              </svg>
+            </p>
+            <p class="text-gray-500 text-sm flex-1">Memdeklaro provides a tool for anyone around the world to self-declare their identity however they want.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how" class="py-32 bg-white">
+<div class="max-w-4xl mx-auto">
+          <h2 class="font-serif text-3xl font-bold text-ink text-center mb-12">How to Get Started</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-gray-100 card-hover">
+              <div class="w-12 h-12 bg-brand-600 rounded-xl text-white font-bold text-xl flex items-center justify-center mx-auto mb-4">1</div>
+              <h4 class="font-semibold text-ink mb-2">Use the Generator</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Fill out the form below. It runs locally in your browser - no data is sent anywhere.</p>
+            </div>
+            <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-gray-100 card-hover">
+              <div class="w-12 h-12 bg-brand-600 rounded-xl text-white font-bold text-xl flex items-center justify-center mx-auto mb-4">2</div>
+              <h4 class="font-semibold text-ink mb-2">Print or Go Digital</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Print as a business card or plastic card, or use digitally as a PDF or verifiable credential.</p>
+            </div>
+            <div class="text-center p-8 bg-white rounded-2xl shadow-sm border border-gray-100 card-hover">
+              <div class="w-12 h-12 bg-brand-600 rounded-xl text-white font-bold text-xl flex items-center justify-center mx-auto mb-4">3</div>
+              <h4 class="font-semibold text-ink mb-2">Live Freely</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Build your reputation, make connections and be who you want to be.</p>
+            </div>
+          </div>
+        </div>
+</section>
+    <section id="generator" class="py-32 bg-gradient-to-b from-brand-50 to-cream">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <h2 class="font-serif text-4xl lg:text-6xl font-black text-ink mb-6 leading-tight">
+            Make Your<br> <span class="gradient-text">Self-Declaration</span>
+          </h2>
+          </div>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
+            <div class="bg-gradient-to-r from-brand-900 to-brand-700 p-8 flex items-center gap-6">
+              <div class="flex-shrink-0">
+                <div class="w-16 h-16 bg-brand-600/40 rounded-xl flex items-center justify-center border border-brand-400/30">
+                  <svg class="w-8 h-8 text-brand-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-2 9l2 2 4-4"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-white font-serif text-xl font-bold">Memdeklaro de identeco</h3>
+                <p class="text-brand-200 text-sm mt-1">Self-declaration of identity</p>
+              </div>
+            </div>
+            <div class="p-8 lg:p-12">
+              <form class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="first_name" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">First name <span class="text-brand-500 font-mono normal-case tracking-normal font-normal">(Antaŭnomo)</span></label>
+                  <input id="first_name" type="text" placeholder="JOHN" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-ink font-medium focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white">
+                </div>
+                <div>
+                  <label for="surname" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Surname <span class="text-brand-500 font-mono normal-case tracking-normal font-normal">(Nomo)</span></label>
+                  <input id="surname" type="text" placeholder="DOE" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-ink font-medium focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white">
+                </div>
+                <div>
+                  <label for="birth_date" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Birth date <span class="text-brand-500 font-mono normal-case tracking-normal font-normal">(Naskiĝdato)</span></label>
+                  <input id="birth_date" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-ink font-medium focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white" type="text" placeholder="1995-01-31">
+                </div>
+                <div>
+                  <label for="issued" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Date of issuance <span class="text-brand-500 font-mono normal-case tracking-normal font-normal">(Eldondato)</span></label>
+                  <input id="issued" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-ink font-medium focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white" type="input" placeholder="2026-02-28">
+                </div>
+                <div>
+                  <label for="expiry" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Date of expiry <span class="text-brand-500 font-mono normal-case tracking-normal font-normal">(Limdato)</span></label>
+                  <input id="expiry" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-ink font-medium focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white" placeholder="2031-02-28" type="text">
+                </div>
+                <div>
+                  <label for="id_number" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">ID number (10 digits) <span class="text-brand-500 font-mono normal-case tracking-normal font-normal">(Numero)</span></label>
+                  <input id="id_number" type="text" placeholder="1234567890" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-ink font-mono font-medium focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white">
+                </div>
+                <div class="md:col-span-2">
+                  <label for="note" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Note (Max 2 lines) <span class="text-brand-500 font-mono normal-case tracking-normal font-normal">(Notoj)</span></label>
+                  <textarea id="note" rows="2" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-ink font-medium focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white resize-none" placeholder="E.g. Conscientious Objector"></textarea>
+                </div>
+                <div>
+                  <label for="issuer" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Issuer <span class="text-brand-500 font-mono normal-case tracking-normal font-normal">(Eldonisto)</span></label>
+                  <input id="issuer" type="text" value="EPO" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-ink font-medium focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white">
+                </div>
+                <div>
+                  <label for="mrz" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">MRZ <span class="text-gray-400 font-normal normal-case tracking-normal">(Auto generated)</span></label>
+                  <textarea id="mrz" rows="1" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-gray-400 font-mono text-sm focus:outline-none bg-gray-50 resize-none" placeholder="MRZ (Auto generated)"></textarea>
+                </div>
+                <div>
+                  <label for="photo" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Photo (35mm × 45mm) <span class="text-brand-500 font-mono normal-case tracking-normal font-normal">(Foto)</span></label>
+                  <div class="w-full px-4 py-3 border-2 border-dashed border-gray-200 rounded-xl bg-gray-50 hover:border-brand-300 hover:bg-brand-50 transition-all duration-200 cursor-pointer">
+                    <div class="flex items-center gap-3">
+                      <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                      <input id="photo" type="file" accept="image/*" class="text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-brand-50 file:text-brand-500 hover:file:bg-brand-100">
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <label for="signature" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Signature <span class="text-brand-500 font-mono normal-case tracking-normal font-normal">(Subskribo)</span></label>
+                  <div class="w-full px-4 py-3 border-2 border-dashed border-gray-200 rounded-xl bg-gray-50 hover:border-brand-300 hover:bg-brand-50 transition-all duration-200 cursor-pointer">
+                    <div class="flex items-center gap-3">
+                      <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                      </svg>
+                      <input id="signature" type="file" id="photo" accept="image/*" class="text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-brand-50 file:text-brand-500 hover:file:bg-brand-100">
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <label for="generate_pdf417" class="inline-flex items-center text-sm font-bold text-gray-500">
+                    <input class="border border-brand-400" id="generate_pdf417" type="checkbox" value="1">
+                    <span class="px-2">Include Barcode</span>
+                  </label>
+                </div>
+                <div>
+                  <label for="generate_did" class="inline-flex items-center text-sm font-bold text-gray-500">
+                    <input class="border border-brand-400" id="generate_did" type="checkbox" value="1" onchange="document.querySelector('#show_did_identifier').style.display = this.checked ? 'block' : 'none'">
+                    <span class="px-2">Generate Verifiable Credential (DID)</span>
+                  </label>
+                  <div id="show_did_identifier" style="display:none">
+                    <label for="did_identifier" class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2 mt-2">DID Identifier</label>
+                    <input id="did_identifier" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-ink font-medium focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all duration-200 bg-gray-50 hover:bg-white" type="input" placeholder="did:key:abcdef1234567890...">
+                  </div>
+                </div>
+                <div class="md:col-span-2">
+                  <p class="bg-green-50 p-4 rounded-2xl border border-yellow-100 mb-6 text-green-700 text-sm leading-relaxed">
+                    <b>Privacy First:</b> Your self-declaration is generated locally on your device. Your data stays with you and is never uploaded to a server or saved in a database.
+                  </p>
+                  <button id="submit" onclick="generate_declaration(); return false;" type="button" class="w-full py-4 bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white font-bold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-brand-500/30 flex items-center justify-center gap-3">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Generate
+                  </button>
+                </div>
+                <script src="https://memdeklaro.github.io/memdeklaro/app/generator.js"></script>
+                <div class="md:col-span-2 text-gray-500 text-sm mt-4 flex items-center gap-2">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-5 h-5 text-gray-500">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Alternatively, you can <a href="https://memdeklaro.github.io/memdeklaro/downloads/app.zip" class="text-brand-500">download the template here</a> and customize your self-declaration using any image editor.</span>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="generator_front" class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mt-12" style="display:none">
+          <div class="p-8 lg:p-12">
+            <h4 class="font-semibold text-ink mb-4 flex items-center gap-2">
+              Self declaration - Front
+            </h4>
+            <div class="text-gray-600 text-sm mt-4 mb-6 flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 36 36"><path fill="#DD2E44" d="M11.626 7.488a1.413 1.413.0 00-.268.395l-.008-.008L.134 33.141l.011.011c-.208.403.14 1.223.853 1.937.713.713 1.533 1.061 1.936.853l.01.01L28.21 24.735l-.008-.009c.147-.07.282-.155.395-.269 1.562-1.562-.971-6.627-5.656-11.313-4.687-4.686-9.752-7.218-11.315-5.656z"/><path fill="#EA596E" d="M13 12 .416 32.506l-.282.635.011.011c-.208.403.14 1.223.853 1.937.232.232.473.408.709.557L17 17l-4-5z"/><path fill="#A0041E" d="M23.012 13.066c4.67 4.672 7.263 9.652 5.789 11.124-1.473 1.474-6.453-1.118-11.126-5.788-4.671-4.672-7.263-9.654-5.79-11.127 1.474-1.473 6.454 1.119 11.127 5.791z"/><path fill="#AA8DD8" d="M18.59 13.609a.99.99.0 01-.734.215c-.868-.094-1.598-.396-2.109-.873-.541-.505-.808-1.183-.735-1.862.128-1.192 1.324-2.286 3.363-2.066.793.085 1.147-.17 1.159-.292.014-.121-.277-.446-1.07-.532-.868-.094-1.598-.396-2.11-.873-.541-.505-.809-1.183-.735-1.862.13-1.192 1.325-2.286 3.362-2.065.578.062.883-.057 1.012-.134.103-.063.144-.123.148-.158.012-.121-.275-.446-1.07-.532a.998.998.0 01-.886-1.102.997.997.0 011.101-.886c2.037.219 2.973 1.542 2.844 2.735-.13 1.194-1.325 2.286-3.364 2.067-.578-.063-.88.057-1.01.134-.103.062-.145.123-.149.157-.013.122.276.446 1.071.532 2.037.22 2.973 1.542 2.844 2.735-.129 1.192-1.324 2.286-3.362 2.065-.578-.062-.882.058-1.012.134-.104.064-.144.124-.148.158-.013.121.276.446 1.07.532a1 1 0 01.52 1.773z"/><path fill="#77B255" d="M30.661 22.857c1.973-.557 3.334.323 3.658 1.478.324 1.154-.378 2.615-2.35 3.17-.77.216-1.001.584-.97.701.034.118.425.312 1.193.095 1.972-.555 3.333.325 3.657 1.479.326 1.155-.378 2.614-2.351 3.17-.769.216-1.001.585-.967.702.033.117.423.311 1.192.095a1 1 0 11.54 1.925c-1.971.555-3.333-.323-3.659-1.479-.324-1.154.379-2.613 2.353-3.169.77-.217 1.001-.584.967-.702-.032-.117-.422-.312-1.19-.096-1.974.556-3.334-.322-3.659-1.479-.325-1.154.378-2.613 2.351-3.17.768-.215.999-.585.967-.701-.034-.118-.423-.312-1.192-.096a1 1 0 11-.54-1.923z"/><path fill="#AA8DD8" d="M23.001 20.16a1.001 1.001.0 01-.626-1.781c.218-.175 5.418-4.259 12.767-3.208a1 1 0 11-.283 1.979c-6.493-.922-11.187 2.754-11.233 2.791a.999.999.0 01-.625.219z"/><path fill="#77B255" d="M5.754 16a1 1 0 01-.958-1.287c1.133-3.773 2.16-9.794.898-11.364-.141-.178-.354-.353-.842-.316-.938.072-.849 2.051-.848 2.071a1 1 0 11-1.994.149c-.103-1.379.326-4.035 2.692-4.214 1.056-.08 1.933.287 2.552 1.057 2.371 2.951-.036 11.506-.542 13.192A1 1 0 015.754 16z"/><circle fill="#5C913B" cx="25.5" cy="9.5" r="1.5"/><circle fill="#9266CC" cx="2" cy="18" r="2"/><circle fill="#5C913B" cx="32.5" cy="19.5" r="1.5"/><circle fill="#5C913B" cx="23.5" cy="31.5" r="1.5"/><circle fill="#FFCC4D" cx="28" cy="4" r="2"/><circle fill="#FFCC4D" cx="32.5" cy="8.5" r="1.5"/><circle fill="#FFCC4D" cx="29.5" cy="12.5" r="1.5"/><circle fill="#FFCC4D" cx="7.5" cy="23.5" r="1.5"/></svg>
+              <span><b>Congratulations, your self-declaration is ready!</b><br>  Download the front and back, then print it yourself as a business card or CR-80 plastic card, or use it digitally.</span>
+            </div>
+            <canvas id="canvas_front"></canvas>
+            <div class="md:col-span-2 pt-4">
+              <button id="download_front" onclick="download_front(); return false;" type="button" class="w-full py-4 bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white font-bold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-brand-500/30 flex items-center justify-center gap-3">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                Download Front
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="generator_back" class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mt-12" style="display:none">
+          <div class="p-8 lg:p-12">
+            <h4 class="font-semibold text-ink mb-4 flex items-center gap-2">
+              Self declaration - Back
+            </h4>
+            <div class="text-gray-600 text-sm mt-4 mb-6 flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 36 36"><path fill="#DD2E44" d="M11.626 7.488a1.413 1.413.0 00-.268.395l-.008-.008L.134 33.141l.011.011c-.208.403.14 1.223.853 1.937.713.713 1.533 1.061 1.936.853l.01.01L28.21 24.735l-.008-.009c.147-.07.282-.155.395-.269 1.562-1.562-.971-6.627-5.656-11.313-4.687-4.686-9.752-7.218-11.315-5.656z"/><path fill="#EA596E" d="M13 12 .416 32.506l-.282.635.011.011c-.208.403.14 1.223.853 1.937.232.232.473.408.709.557L17 17l-4-5z"/><path fill="#A0041E" d="M23.012 13.066c4.67 4.672 7.263 9.652 5.789 11.124-1.473 1.474-6.453-1.118-11.126-5.788-4.671-4.672-7.263-9.654-5.79-11.127 1.474-1.473 6.454 1.119 11.127 5.791z"/><path fill="#AA8DD8" d="M18.59 13.609a.99.99.0 01-.734.215c-.868-.094-1.598-.396-2.109-.873-.541-.505-.808-1.183-.735-1.862.128-1.192 1.324-2.286 3.363-2.066.793.085 1.147-.17 1.159-.292.014-.121-.277-.446-1.07-.532-.868-.094-1.598-.396-2.11-.873-.541-.505-.809-1.183-.735-1.862.13-1.192 1.325-2.286 3.362-2.065.578.062.883-.057 1.012-.134.103-.063.144-.123.148-.158.012-.121-.275-.446-1.07-.532a.998.998.0 01-.886-1.102.997.997.0 011.101-.886c2.037.219 2.973 1.542 2.844 2.735-.13 1.194-1.325 2.286-3.364 2.067-.578-.063-.88.057-1.01.134-.103.062-.145.123-.149.157-.013.122.276.446 1.071.532 2.037.22 2.973 1.542 2.844 2.735-.129 1.192-1.324 2.286-3.362 2.065-.578-.062-.882.058-1.012.134-.104.064-.144.124-.148.158-.013.121.276.446 1.07.532a1 1 0 01.52 1.773z"/><path fill="#77B255" d="M30.661 22.857c1.973-.557 3.334.323 3.658 1.478.324 1.154-.378 2.615-2.35 3.17-.77.216-1.001.584-.97.701.034.118.425.312 1.193.095 1.972-.555 3.333.325 3.657 1.479.326 1.155-.378 2.614-2.351 3.17-.769.216-1.001.585-.967.702.033.117.423.311 1.192.095a1 1 0 11.54 1.925c-1.971.555-3.333-.323-3.659-1.479-.324-1.154.379-2.613 2.353-3.169.77-.217 1.001-.584.967-.702-.032-.117-.422-.312-1.19-.096-1.974.556-3.334-.322-3.659-1.479-.325-1.154.378-2.613 2.351-3.17.768-.215.999-.585.967-.701-.034-.118-.423-.312-1.192-.096a1 1 0 11-.54-1.923z"/><path fill="#AA8DD8" d="M23.001 20.16a1.001 1.001.0 01-.626-1.781c.218-.175 5.418-4.259 12.767-3.208a1 1 0 11-.283 1.979c-6.493-.922-11.187 2.754-11.233 2.791a.999.999.0 01-.625.219z"/><path fill="#77B255" d="M5.754 16a1 1 0 01-.958-1.287c1.133-3.773 2.16-9.794.898-11.364-.141-.178-.354-.353-.842-.316-.938.072-.849 2.051-.848 2.071a1 1 0 11-1.994.149c-.103-1.379.326-4.035 2.692-4.214 1.056-.08 1.933.287 2.552 1.057 2.371 2.951-.036 11.506-.542 13.192A1 1 0 015.754 16z"/><circle fill="#5C913B" cx="25.5" cy="9.5" r="1.5"/><circle fill="#9266CC" cx="2" cy="18" r="2"/><circle fill="#5C913B" cx="32.5" cy="19.5" r="1.5"/><circle fill="#5C913B" cx="23.5" cy="31.5" r="1.5"/><circle fill="#FFCC4D" cx="28" cy="4" r="2"/><circle fill="#FFCC4D" cx="32.5" cy="8.5" r="1.5"/><circle fill="#FFCC4D" cx="29.5" cy="12.5" r="1.5"/><circle fill="#FFCC4D" cx="7.5" cy="23.5" r="1.5"/></svg>
+              <span><b>Congratulations, your self-declaration is ready!</b><br>  Download the front and back, then print it yourself as a business card or CR-80 plastic card, or use it digitally.</span>
+            </div>
+            <canvas id="canvas_back"></canvas>
+            <div class="md:col-span-2 pt-4">
+              <button id="download_back" onclick="download_back(); return false;" type="button" class="w-full py-4 bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white font-bold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-brand-500/30 flex items-center justify-center gap-3">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                Download Back
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="generator_pdf" class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mt-12" style="display:none">
+          <div class="p-8 lg:p-12">
+            <h4 class="font-semibold text-ink mb-4 flex items-center gap-2">
+              Self declaration - PDF
+            </h4>
+            <div class="text-gray-600 text-sm mt-4 mb-6 flex items-center gap-2">
+              <span>You can optionally download your self-declaration as a PDF, which includes a QR code.</span>
+            </div>
+            <div class="md:col-span-2 pt-4">
+              <button id="download_pdf" onclick="download_pdf(); return false;" type="button" class="w-full py-4 bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-700 hover:to-brand-600 text-white font-bold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-brand-500/30 flex items-center justify-center gap-3">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                Download PDF
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="generator_did" class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mt-12" style="display:none">
+          <div class="p-8 lg:p-12">
+            <h4 class="font-semibold text-ink mb-4 flex items-center gap-2">
+              Self declaration - DID
+            </h4>
+            <div class="text-gray-600 text-sm mt-4 mb-6 flex items-center gap-2">
+              <span>Here is your self-asserted verifiable credential. Now you can <b>self-sign it</b> with your DID key and then <b>import it</b> into your digital wallet.</span>
+            </div>
+            <div class="md:col-span-2 pt-4">
+              <div>
+                <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Self-Asserted Verifiable Credential <span class="text-gray-400 font-normal normal-case tracking-normal">(JSON-LD)</span></label>
+                <textarea id="did" rows="12" class="w-full px-4 py-3 border border-gray-200 rounded-xl text-gray-400 font-mono text-sm focus:outline-none bg-gray-50 resize-none" placeholder="JSON-LD"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-4xl mx-auto mt-12">
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+            <h4 class="font-semibold text-ink mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Similar Projects
+            </h4>
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600 leading-relaxed">
+              <div>
+                <a href="https://worldcitizengov.org/what-is-the-world-passport" class="text-ink font-bold mb-1">World Passport</a>
+                <p>Apply for a World Passport using only your fingerprints. No government ID required.</p>
+              </div>
+              <div>
+                <a href="https://shop.digitalcourage.de/gadgets/lichtbildausweis-mit-selbst-waehlbaren-daten.html" class="text-ink font-bold mb-1">Digitalcourage ID</a>
+                <p>Get a privacy-friendly Digitalcourage photo ID card under your self-chosen name.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="philosophy" class="py-32 bg-ink relative overflow-hidden">
+      <div class="absolute inset-0 bg-ink/90"></div>
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+          <div>
+            <span class="inline-block px-4 py-1.5 bg-brand-800/50 text-brand-300 text-xs font-bold rounded-full uppercase tracking-widest mb-6">Philosophy</span>
+            <h2 class="font-serif text-4xl lg:text-5xl font-black text-white mb-8 leading-tight">
+              Live the Three Freedoms
+            </h2>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-10 h-10 bg-brand-600/30 border border-brand-500/30 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-semibold mb-1">Freedom of Name</h4>
+                  <p class="text-gray-400 text-sm leading-relaxed">Choose a name that fits you.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-10 h-10 bg-brand-600/30 border border-brand-500/30 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-semibold mb-1">Freedom of Belief</h4>
+                  <p class="text-gray-400 text-sm leading-relaxed">Live how you want and believe what you want.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-10 h-10 bg-brand-600/30 border border-brand-500/30 rounded-lg flex items-center justify-center">
+                  <svg class="w-5 h-5 text-brand-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-semibold mb-1">Freedom of Association</h4>
+                  <p class="text-gray-400 text-sm leading-relaxed">Define your own culture, home and personal ties.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="glass rounded-3xl p-10 relative">
+              <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-500/5 to-transparent rounded-3xl pointer-events-none"></div>
+              <p class="text-gray-300 text-sm font-medium uppercase tracking-widest mb-6">Building a Fairer Future</p>
+              <p class="text-white/80 text-base leading-relaxed mb-6">
+                Memdeklaro developed the <span class="text-white font-medium">self-declaration of identity</span> as a universally accessible identity document, which does not require the permission of a nation-state, birth parents or other third parties.
+              </p>
+              <p class="text-white/80 text-base leading-relaxed mb-6">
+                This helps to <span class="text-white font-medium">build a free world</span> where personal beliefs, character and effort are more important than where you were born or who you were born to.
+              </p>
+              <blockquote class="border-l-2 border-brand-400 pl-5 mt-8">
+                <p class="text-white/70 italic text-base leading-relaxed">
+                  "The choice of your own name is a liberating act where your ideals, actions and efforts matter more than the situation that you were born into."
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="py-32 bg-gradient-to-br from-brand-900 via-brand-800 to-brand-950 relative overflow-hidden">
+      <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-600/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-brand-500/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="font-serif text-5xl lg:text-7xl font-black text-white mb-8 leading-tight">
+          One World,<br> <span class="text-brand-300">One Humankind.</span>
+        </h2>
+        <p class="text-white/70 text-xl leading-relaxed mb-4 max-w-2xl mx-auto font-semibold">
+          Self-declaration of identity means freedom for everyone.
+        </p>
+        <p class="text-white/70 text-xl leading-relaxed mb-12 max-w-2xl mx-auto">
+          Everyone is welcome to join the movement. Generate your self-declaration, read the whitepaper or specification, or fork the repo and make something new.
+        </p>
+        <div class="grid lg:grid-cols-3 gap-6 justify-center">
+          <a href="https://github.com/memdeklaro" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 px-5 py-2 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 backdrop-blur-sm text-md">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"></path>
+            </svg>
+            Github
+          </a>
+          <a href="https://memdeklaro.github.io/memdeklaro/downloads/whitepaper.pdf" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 px-5 py-2 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 backdrop-blur-sm text-md">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path>
+            </svg>
+            Whitepaper
+          </a>
+          <a href="https://memdeklaro.github.io/memdeklaro/downloads/working_paper.pdf" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 px-5 py-2 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 backdrop-blur-sm text-md">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path>
+            </svg>
+            Research Paper
+          </a>
+          <a href="https://memdeklaro.github.io/memdeklaro/downloads/technical_specification.pdf" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 px-5 py-2 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 backdrop-blur-sm text-md">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path>
+            </svg>
+            Technical Specification
+          </a>
+          <a href="https://memdeklaro.github.io/memdeklaro/downloads/app.zip" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 px-5 py-2 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 backdrop-blur-sm text-md">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            Source Code
+          </a>
+          <a href="https://memdeklaro.github.io/memdeklaro/about" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 px-5 py-2 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 backdrop-blur-sm text-md">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01 2"></path>
+            </svg>
+            FAQ
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-ink text-white py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-12">
+          <div class="md:col-span-2">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-lg bg-brand-600 flex items-center justify-center">
+                <svg fill="white" stroke="none" class="w-6 h-6" viewBox="0 0 40 40">
+                  <path d="M37.2317 4.49969C36.4913 5.78214 35.1479 6.49947 33.7664 6.50036C33.0773 5.30374 33.0273 3.78252 33.7674 2.50067C34.5078 1.21821 35.8511 0.500883 37.2326 0.5C37.9217 1.69661 37.9718 3.21783 37.2317 4.49969Z" fill="white"></path>
+                  <path clip-rule="evenodd" d="M33.0615 10.7135C32.5693 12.0271 32.3346 13.6297 32.3807 15.4463C33.0777 14.8558 33.9797 14.4997 34.9648 14.4997C36.4454 14.4997 37.7381 15.3041 38.4297 16.4998C37.7381 17.6953 36.4455 18.4997 34.965 18.4997C34.0664 18.4997 33.237 18.2034 32.5693 17.7032C32.744 18.9703 33.0381 20.3133 33.4578 21.7122L31.5422 22.287C30.1447 17.6289 29.9658 13.2344 31.2025 9.97435C30.3063 10.1345 29.3508 9.99127 28.5007 9.50042C27.2184 8.7601 26.5011 7.41704 26.5 6.03574C27.6967 5.34622 29.2184 5.29597 30.5005 6.03622C31.7797 6.77478 32.4967 8.11322 32.5011 9.49106C33.4786 8.51609 34.9348 8.07423 36.3643 8.45726C37.7945 8.84047 38.835 9.95212 39.1935 11.2861C38.216 12.2618 36.7593 12.7042 35.3292 12.321C34.3674 12.0633 33.5819 11.4762 33.0615 10.7135ZM32.5012 9.49649L32.5012 9.50018L32.5023 9.50075L32.5012 9.49649Z" fill="white" fill-rule="evenodd"></path>
+                  <path d="M14.1642 14.8722C12.5378 13.7105 11.1276 12.4211 10.1157 11.4102C10.411 8.39997 11.9206 5.95131 13.4943 4.56836C13.4943 4.56836 14.6544 7.07845 16.6511 9.85287C16.5382 10.014 16.4313 10.1798 16.3298 10.3498C15.5425 11.6683 15.0345 13.3338 14.6404 15.198C14.4861 15.0971 14.3278 14.9891 14.1642 14.8722Z" fill="white"></path>
+                  <path clip-rule="evenodd" d="M18.502 32.9997C23.502 32.9997 28.002 28.9997 28.002 22.9997C28.002 21.2048 27.7564 19.9613 27.4374 18.3456C27.3012 17.6555 27.1516 16.8975 27.002 15.9997L30.002 14.9997L27.4558 13.3023C26.4452 10.7854 24.8642 8.99972 22.5019 8.99972C18.1713 8.99972 17.082 12.2412 16.1148 18.2786C15.9974 18.2195 15.8792 18.1607 15.7596 18.1013C14.9406 17.6941 14.0632 17.2578 13.0018 16.4997C9.50184 13.9997 7.00193 10.9997 7.00193 10.9997C5.00188 13.9997 4.00195 19.9997 9.00168 24.9997C9.39734 25.3954 9.78234 25.7464 10.1538 26.0578C8.10767 26.7058 5.44022 26.9997 2.00173 26.9997C2.00173 26.9997 1.33529 28.9997 3.00173 31.4997C4.66816 33.9997 7.00156 34.9997 7.00156 34.9997L13.0016 31.9997C13.0016 31.9997 15.002 32.9997 18.502 32.9997ZM27.002 15.8679C26.993 15.9206 26.9923 15.9652 27.002 15.9997V15.8679ZM24.0017 13.4997C24.0017 14.3281 23.3302 14.9997 22.5017 14.9997C21.6733 14.9997 21.0017 14.3281 21.0017 13.4997C21.0017 12.6713 21.6733 11.9997 22.5017 11.9997C23.3302 11.9997 24.0017 12.6713 24.0017 13.4997Z" fill="white" fill-rule="evenodd"></path>
+                </svg>
+              </div>
+              <span class="font-serif font-bold text-xl text-white">Memdeklaro</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4 max-w-xs">
+              A philosophical project empowering people to self-declare their identity. Non-government and non-corporate.
+            </p>
+            <div class="mt-6 inline-flex items-center gap-2 px-3 py-1.5 bg-green-900/30 text-green-400 text-xs rounded-full border border-green-800/30">
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Public Domain | Forks Welcome
+            </div>
+          </div>
+          <div>
+            <h5 class="text-white font-semibold mb-6 text-sm uppercase tracking-widest">Articles</h5>
+            <div class="flex flex-col gap-3">
+              <a href="https://memdeklaro.github.io/memdeklaro/blog/decentralized-identity-guide" class="text-gray-400 hover:text-white text-sm transition-colors link-underline">Decentralized Identity (DID)</a>
+              <a href="https://memdeklaro.github.io/memdeklaro/blog/decentralized-identity-guide" class="text-gray-400 hover:text-white text-sm transition-colors link-underline">Self-Sovereign Identity (SSI)</a>
+              <a href="https://memdeklaro.github.io/memdeklaro/blog/non-government-id-guide" class="text-gray-400 hover:text-white text-sm transition-colors link-underline">Memdeklaro vs. Digitalcourage</a>
+              <a href="https://memdeklaro.github.io/memdeklaro/blog/non-government-id-guide" class="text-gray-400 hover:text-white text-sm transition-colors link-underline">Memdeklaro vs. World Passport</a>
+              <a href="https://memdeklaro.github.io/memdeklaro/blog/non-government-id-guide" class="text-gray-400 hover:text-white text-sm transition-colors link-underline">Memdeklaro vs. Bitnation</a>
+            </div>
+          </div>
+          <div>
+            <h5 class="text-white font-semibold mb-6 text-sm uppercase tracking-widest">About</h5>
+            <div class="flex flex-col gap-3">
+              <a href="https://memdeklaro.github.io/memdeklaro/about" class="text-gray-400 hover:text-white text-sm transition-colors link-underline flex items-center gap-2">About / FAQ</a>
+              <a href="https://memdeklaro.github.io/memdeklaro/download" class="text-gray-400 hover:text-white text-sm transition-colors link-underline flex items-center gap-2">Download</a>
+              <a href="https://memdeklaro.github.io/memdeklaro/contact" class="text-gray-400 hover:text-white text-sm transition-colors link-underline flex items-center gap-2">Contact</a>
+              <a href="https://memdeklaro.github.io/memdeklaro/terms" class="text-gray-400 hover:text-white text-sm transition-colors link-underline flex items-center gap-2">Terms</a>
+              <a href="https://memdeklaro.github.io/memdeklaro/privacy" class="text-gray-400 hover:text-white text-sm transition-colors link-underline flex items-center gap-2">Privacy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
